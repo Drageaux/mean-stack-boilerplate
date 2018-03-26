@@ -1,0 +1,29 @@
+<header class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a class="navbar-brand"
+           [routerLink]="['/home']">Brand</a>
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse"
+                data-target="#responsive-navbar"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="responsive-navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">Home</a>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item"><a class="nav-link" disabled href="#">Log Out</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</header>
+
+<router-outlet></router-outlet>
